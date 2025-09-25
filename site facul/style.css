@@ -28,6 +28,8 @@ body {
     background: linear-gradient(180deg, #EAEAEA 0%, #FFFFFF 100%);
     line-height: 1.6;
     font-size: 1.6rem; /* Tamanho de fonte padrão para o corpo (equivale a 16px) */
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -53,8 +55,9 @@ header {
 
 .header-container {
     display: flex;
-    flex-direction: column; /* Empilha os itens no mobile */
+    flex-direction: row; /* Empilha os itens no mobile */
     align-items: center;
+    justify-content: space-between;
     gap: 2rem;
 }
 
@@ -178,7 +181,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 8.5rem; /* Ajuste conforme a altura do seu header */
+    top: 15rem; /* Ajuste conforme a altura do seu header */
     right: 0;
     width: 100%;
     background-color: var(--white);
